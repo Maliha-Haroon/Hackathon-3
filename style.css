@@ -1,0 +1,154 @@
+/*CSS style sheet for resume*/
+/*body styling*/
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: #2a9d8f; 
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Main Section Styling */
+main {
+    display: flex;
+    flex-direction: column; /* it is Keep it vertical for header and form */
+    align-items: center;    /* it is Center children horizontally */
+     justify-content: center; /*  it is Center children vertically */
+    margin: 40px auto;
+    padding: 20px;
+     background: #ffffff;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 80vh; /* Add this to ensure it occupies enough space vertically */
+}
+
+
+/* Form Section Styling */
+#resume-form {
+    width: 100%;
+    max-width: 600px; /* we can Adjust this as needed */
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    margin: 0 auto; /* Centering the form horizontally */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input Field Styling */
+input, textarea {
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #2a9d8f; 
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #264653; 
+    cursor: pointer;
+    border-radius: 30px; /* Rounded button */
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #2a9d8f; 
+    transform: scale(1.05); /* Grow slightly on hover */
+}
+
+/* Resume Display Section Styling */
+ #resume-display {
+    
+    padding: 20px;
+    background-color: #e9f7f9; /* Very light teal */
+   border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    flex-direction: column;
+    margin: 0 auto; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+} 
+ #resume-display {
+    width: 48%;
+   padding: 20px;
+     background-color: #e9f7f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);} 
+
+    
+
+
+
+    /* Resume Display Section Styling */
+h2, h3 {
+    color: #264653; 
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding: 10px;
+    background: #ffffff;
+     border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+footer {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+     position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* this is Media Query for Responsiveness */
+@media (max-width: 768px) {
+    main {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+     #resume-form, #resume-display {
+        padding: 15px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

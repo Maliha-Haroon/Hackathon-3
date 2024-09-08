@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Form for input -->
+    <section id="resume-form">
+        <form id="resume-builder-form">
+<!--for Personal information-->
+            <h3>Personal Information</h3>
+            <input type="text" id="name" placeholder="Name" required>
+             <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="contact" placeholder="Contact Number">
+<!--for Educational information-->
+               <h3>Education</h3>
+                <input type="text" id="degree" placeholder="Degree">
+               <input type="text" id="university" placeholder="University">
+               <input type="text" id="education-year" placeholder="Year">
+<!--for work Experiance-->
+            <h3>Work Experience</h3>
+            <input type="text" id="job-title" placeholder="Job Title">
+             <input type="text" id="company" placeholder="Company">
+             <input type="text" id="work-year" placeholder="Year">
+            <textarea id="responsibilities" placeholder="Responsibilities"></textarea>
+<!--for skills-->
+            <h3>Skills</h3>
+
+            <input type="text" id="skills" placeholder="Add skills, separated by commas">
+
+            <!-- Submit Button to generate resume -->
+
+            <button type="submit">Generate Resume</button>
+        </form>
+    </section>
+
+    <!-- Section to display the dynamically generated resume -->
+    <section id="resume-display"></section>
+
+    <script src="script.js"></script> <!-- Make sure this points to your compiled JS file -->
+</body>
+</html>
